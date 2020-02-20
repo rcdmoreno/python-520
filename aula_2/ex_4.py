@@ -20,18 +20,20 @@ for numero in lista:
         multiplicador = calculadora - numero
         print(calculadora, "-", numero, ":", multiplicador)
         contador = contador + 1
+        soma = soma + multiplicador
     elif operação == "x":
         multiplicador = calculadora * numero
         print(calculadora, "x", numero, ":", multiplicador)
         contador = contador + 1
+        soma = soma + multiplicador
     elif operação == "/":
         multiplicador = calculadora / numero
         print(calculadora, "/", numero, ":", multiplicador)
         contador = contador + 1
+        soma = soma + multiplicador
     else:
         print(" Tchau, você nao digitou operador!!!")
         exit()
-    #         soma = soma + multiplicador
-    #media = soma / contador
-#print("\nA soma total dos valores são: ",soma)
-#print("A média dos valores são: ",media)
+media = soma / contador
+print("\nA soma total dos valores são: ",soma)
+print("A média dos valores são: ",media)
