@@ -11,7 +11,7 @@ def create_user(name, email, password):
     })
 
 def find_user_by_email(email):
-    return db.users.find({
+    return db.users.find_one({
         'email': email
     })
 
