@@ -30,12 +30,12 @@ print('3 - Listar usuário Cadastrados;')
 print('4 - Remover Usuario pelo nome;')
 print('0 - Encerrar o Programa.\n')
 
-opcao = int(input('Digite a opção desejada: '))
+opcao = input('Digite a opção desejada: ')
 
-if opcao == 0:
+if int(opcao) == 0:
     print('Agradeçemos sua preferência.\n\n')
 
-elif opcao == 1:
+elif int(opcao) == 1:
     name = input('Digite seu nome: ')
     email = input('Digite seu email: ')
     password = input('Digite sua senha: ')
