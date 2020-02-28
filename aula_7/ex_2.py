@@ -8,7 +8,7 @@ connection.execute(
     insert_operation,
     [
         {
-            'name': 'Lucas',
+            'name': 'Ricardo',
             'age': 26,
             'password': 'admin'
             

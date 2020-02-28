@@ -44,8 +44,7 @@ users_table = sqlalchemy.Table(
         sqlalchemy.DateTime,
         default=datetime.datetime.now,
         onupdate=datetime.datetime.now
-    )
-)
+    ))
 
 addresses_table = sqlalchemy.Table(
     'tb_Addresses',
@@ -59,7 +58,8 @@ addresses_table = sqlalchemy.Table(
         'name',
         sqlalchemy.String(100),
         nullable=False
-    )
-)
+    ))
+
 if __name__ == '__main__':
+
     metadata.create_all(engine)

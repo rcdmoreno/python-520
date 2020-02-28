@@ -11,8 +11,8 @@ core.db.Base.metadata.create_all(
 
 # variavel user = nome da pasta.arquivo.classe
 user = models.user.user(
-    name='Lucas A',
-    email='test3@test.com.br',
+    name='Lucas',
+    email='test7@test.com.br',
     password='admin'
 )
 
